@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+  <h2 >Monitorando...</h2>
+  <br>
+  {% if alcançavel %}
+    <p>O host está alcançável.</p>
+{% else %}
+    <p>O host está inalcançável.</p>
+{% endif %}
+<br>
+<br>
+</div>
+</main>
+
+{% endblock %}

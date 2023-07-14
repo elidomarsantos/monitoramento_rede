@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+  <h2 >Adicionar Equipamentos</h2>
+  <br>
+  <form method="post">
+        {% csrf_token %}
+  <div class="card-group" >
+    <div class="card" id='card_pesquisa1'>
+       <div class="card-body">
+        <h5 class="card-title">Equipamento</h5>
+        {{ equipamentos.name }}
+      </div>
+    </div>
+    <div class="card" id='card_pesquisa1'>
+      <div class="card-body">
+        <h5 class="card-title">IP</h5>
+        {{ equipamentos.ip_address }}
+      </div>
+      <input type="submit" class="btn btn-success" value="Salvar">
+    </div>
+   </div>
+   <br>
+   
+   
+</form>
+<br>
+<br>
+</div>
+</main>
+
+{% endblock %}

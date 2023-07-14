@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=BIZ+UDPGothic:wght@700&family=DM+Serif+Display&family=Dancing+Script&family=Fira+Sans:wght@100&family=Gothic+A1:wght@100;200&family=Karla:wght@200&family=Libre+Baskerville&family=Paytone+One&family=Questrial&family=Staatliches&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=BIZ+UDPGothic:wght@700&family=DM+Serif+Display&family=Dancing+Script&family=Fira+Sans:wght@100&family=Gothic+A1:wght@100;200&family=Karla:wght@200&family=Libre+Baskerville&family=Numans&family=Paytone+One&family=Questrial&family=Staatliches&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=BIZ+UDPGothic:wght@700&family=DM+Serif+Display&family=Dancing+Script&family=Fira+Sans:wght@100&family=Gothic+A1:wght@100;200&family=Karla:wght@200&family=Libre+Baskerville&family=Numans&family=Paytone+One&family=Questrial&family=Staatliches&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+@media screen and (max-width: 600px) {
+  main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  }
+
+  *{
+   
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 17px;
+
+    
+}
+
+
+
+body {
+  overflow-x: hidden;
+
+}
+
+.sidebar-sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 40;
+  z-index: 100;
+  padding: 40px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color:darkgoldenrod;
+  text-align: center;
+
+}
+
+.sidebar-sticky li a {
+  color:white;
+  font-size: 25px;
+}
+
+
+#card_pesquisa1 {
+  background-color:gray;
+  margin: 5px;
+  box-shadow: 25px;
+  border-radius: 5%;
+  height: min-content;
+  color:white;
+}
+
+#card_pesquisa_opção {
+  background-color:lightgray;
+  vertical-align: middle;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:160px;
+  text-align: center;
+  padding-top: 20px;
+  
+}
+
+#card_pesquisa_a2 {
+  background-color:lightgray;
+  vertical-align: middle;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:160px;
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+#card_pesquisa2 {
+  background-color:lightgray;
+  vertical-align: middle;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:160px;
+  text-align: center;
+  
+}
+
+#card_pesquisa3 {
+  background-color:lightgray;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:160px;
+  text-align: center;
+  vertical-align: middle;
+ 
+}
+
+#card_pesquisa4 {
+  background-color:lightgray;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:160px;
+  text-align: center;
+  vertical-align: middle;
+
+ 
+}
+
+#card_pesquisa5 {
+  background-color:lightgray;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:160px;
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+#card_pesquisa6 {
+  background-color:lightgray;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:160px;
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+
+#card_pesquisa7 {
+  background-color:lightgray;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:160px;
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+#card_pesquisa8 {
+  background-color:lightgray;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:160px;
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+#card_pesquisa9 {
+  background-color:lightgray;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:160px;
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+#card_pesquisa10 {
+  background-color:lightgray;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:160px;
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+
+#card_pesquisa11 {
+  background-color:gray;
+  box-shadow: 25px;
+  border-radius: 2%;
+  height:190px;
+  text-align: center;
+  vertical-align: middle;
+  color:white;
+ 
+}
+
+#navbarNav {
+  background-color:aquamarine;
+  font-size: 30px;
+  font-weight: bold;
+  color:black;
+}
+
+.navbar-toggler-icon {
+  background-color: darkgoldenrod;
+}
+
+#card_consulta {
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#card_consulta button{
+  font-size: 13px;
+}
+
+#card_consulta input{
+  font-size: 18px;
+}
+

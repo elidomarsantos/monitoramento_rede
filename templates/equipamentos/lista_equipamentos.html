@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<html>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+<body>
+    <h1>Monitoramento de Equipamentos</h1>
+    <ul>
+      {% for equipment in equipments %}
+      <li>{{ equipment.name }} - {% if equipment.is_online %}Online{% else %}Offline{% endif %}</li>
+  {% endfor %}
+      </ul>
+</body>
+</html>
+</main>
+
+{% endblock %}
