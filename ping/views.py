@@ -4,14 +4,14 @@ from django.shortcuts import redirect, render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.views import View
 from .models import Equipamentos
-import subprocess
+import ping3
 
 
 def equipment_list(request):
     equipments = Equipamentos.objects.all()
     for equipment in equipments:
-        result = subprocess.call(['ping', '-c', '1', equipment.ip_address])
-        equipment.is_online = (result == 0)
+        result = ping3.ping(equipment.ip_address)
+        equipment.is_online = result is not None
         equipment.save()
     return render(request, 'equipamentos/lista_equipamentos.html', {'equipments': equipments})
     
