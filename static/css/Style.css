@@ -20,7 +20,9 @@
     
 }
 
-
+li h3 {
+  color:aliceblue;
+}
 
 body {
   overflow-x: hidden;
@@ -41,11 +43,10 @@ body {
 
 }
 
-.sidebar-sticky li a {
+.sidebar-sticky li h3 {
   color:white;
-  font-size: 25px;
+  font-size: 30px;
 }
-
 
 #card_pesquisa1 {
   background-color:gray;
@@ -211,4 +212,24 @@ body {
 #card_consulta input{
   font-size: 18px;
 }
+
+#online {
+  font-size: 200px;
+  border-radius: 15%;
+  cursor: default;
+}
+
+#card_online {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+}
+
+.card, .card-body {
+  border: none;
+}
+
 

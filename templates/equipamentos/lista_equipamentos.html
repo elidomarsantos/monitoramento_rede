@@ -3,14 +3,42 @@
 
 {% block content %}
 <html>
+    <head>
+        <meta http-equiv="refresh" content="30"> <!-- Recarregar a página a cada 30 segundos -->
+    </head>
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 <body>
-    <h1>Monitoramento de Equipamentos</h1>
-    <ul>
-      {% for equipment in equipments %}
-      <li>{{ equipment.name }} - {% if equipment.is_online %}Online{% else %}Offline{% endif %}</li>
-  {% endfor %}
-      </ul>
+    <br>
+    <h1>Switchs</h1>
+   <br>
+   <br>
+      <table class="table table-hover table-bordered table-secondary" id='tabela_lista_ass'>
+        <tbody>
+           <thead class="thead-light">
+            <tr>
+            
+              <th>Switch</th>
+              <th>IP</th>
+              <th>Status</th>
+              <th>Editar</th>
+              <th>Apagar</th>
+              </thead>
+              </tr>
+             <tr>
+   
+            {% for equipment in equipments %}
+              <td>{{ equipment.name }}</td> 
+              <td>{{ equipment.ip_address }}</td> 
+              <td>{% if equipment.online %}Online{% else %}Offline{% endif %}</td> 
+              <td><a href="/editar_equipamentos/{{equipment.id}}"><i class="material-icons" data-md-tooltip="Editar">edit</i></a></td>
+              <td><a href="/deletar_equipamentos/{{equipment.id}}"><i class="material-icons" style=color:crimson data-md-tooltip="Apagar">delete</i></a></td>
+              
+           </tr>
+           {% endfor %} 
+          </tbody>
+        </table>
+     
+      
 </body>
 </html>
 </main>

@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<head>
+  <meta http-equiv="refresh" content="30"> <!-- Recarregar a página a cada 30 segundos -->
+</head>
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+  <br>
+ 
+  <br>
+  <br>
+  <div>
+    <div>
+      <div class="card w-100">
+        <div class="card-body" id='card_online'>
+          <h1 class="card-title">{% if status_offline %}Equipamento</h1>
+        </div>
+      </div>
+      <div class="card w-100">
+        <div class="card-body" id='card_online'>
+          <h5 class="card-title"><input id="online" type="submit" class="btn btn-danger" value="Offline"></h5>
+        </div>
+      </div>
+    </div>
+     <br>
+      <table class="table table-hover table-bordered table-secondary" id='tabela_lista_ass'>
+        <tbody>
+           <thead class="thead-light">
+            <tr>
+              <th>Switch</th>
+              <th>IP</th>
+              <th>Status</th>
+               </thead>
+              </tr>
+             <tr>
+            {% for equipment in equipments %}
+              <td>{{ equipment.name }}</td> 
+              <td>{{ equipment.ip_address }}</td> 
+              <td>{% if equipment.online %}Online{% else %}Offline{% endif %}</td> 
+              
+           </tr>
+           {% endfor %} 
+          </tbody>
+        </table>
+        {% else %}
+      
+        <div class="card w-100" >
+          <div class="card-body" id='card_online'>
+            <h1 class="card-title">Todos Switchs</h1>
+          </div>
+        </div>
+        
+        <div class="card w-100" >
+          <div class="card-body" >
+            <h5 class="card-title"><input id="online" type="submit" class="btn btn-success" value="Online"></h5>
+          </div>
+        </div>
+
+
+    
+      {% endif %}
+     
+
+
+</main>
+
+{% endblock %}
